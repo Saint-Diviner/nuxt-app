@@ -1,0 +1,70 @@
+{
+  "name": "nuxt-realworld",
+  "version": "1.0.0",
+  "private": false,
+  "author": {
+    "name": "devJang",
+    "email": "devjang2016@gmail.com",
+    "url": "https://devjang.github.io"
+  },
+  "homepage": "https://nuxt-realworld.vercel.app",
+  "description": "Built a Example App of RealWorld with Nuxt & Composition API",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devJang/nuxt-realworld.git"
+  },
+  "bugs": "https://github.com/devJang/nuxt-realworld/issues",
+  "keywords": [
+    "vue",
+    "nuxt",
+    "example-project",
+    "realworld",
+    "typescript",
+    "experimental",
+    "composition-api"
+  ],
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
+    "lint:ts": "eslint --ext .ts,.vue --ignore-path .gitignore .",
+    "lint": "yarn lint:js && yarn lint:js && yarn lint:style"
+  },
+  "lint-staged": {
+    "*.{ts,vue}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^2.0.0",
+    "@nuxtjs/axios": "^5.12.4",
+    "@nuxtjs/composition-api": "^0.17.0",
+    "@nuxtjs/markdownit": "^1.2.10",
+    "core-js": "^3.8.1",
+    "nuxt": "^2.14.12"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@nuxt/types": "^2.14.12",
+    "@nuxt/typescript-build": "^2.0.3",
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-config-typescript": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "babel-core": "6.26.3",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1"
+  }
+}
